@@ -1,0 +1,12 @@
+[package]
+name = "rstest"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+native-pkcs11-traits = "0.2.23"
+native-pkcs11 = { version = "0.2.24", features = ["custom-function-list"]}
+
